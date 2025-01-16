@@ -10,8 +10,12 @@ function Service() {
   return (
     <>
       <section className="service-section" id="service">
-        <Container className="mt-5">          
-          <Row className="mt-3">
+        <Container className="mt-5">  
+          <Row className="justify-content-center">
+            <h3 className="font-xlarge font-secondary-color poppins-extrabold">NASZA SPECJALNOŚĆ</h3>
+            <hr></hr>
+          </Row>
+          <Row className="mt-3 justify-content-center">
             <Col xs={12} md={3}>
               <Card className="card-basic card-transport">
                 <Card.Body>
@@ -19,7 +23,7 @@ function Service() {
                   <Card.Subtitle className="mb-2 text-muted">
                     <FontAwesomeIcon icon={faRecycle} className="fa-2x font-primary-color" />
                   </Card.Subtitle>
-                  <Card.Text><p className="poppins-semibold font-primary-color">
+                  <Card.Text><p className="poppins-semibold font-primary-color">Bezpieczny i ekologiczny
                    </p>
                   </Card.Text>
                 </Card.Body>

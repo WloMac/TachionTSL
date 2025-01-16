@@ -4,6 +4,7 @@ import './custom.scss';
 import './App.css';
 import Hero from './Hero';
 import Service from './Service';
+import Fleet from './Fleet';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -13,6 +14,7 @@ function App() {
     <>
      <Hero />
      <Service />
+     <Fleet />
      <About />
      <Contact />
      <Footer />

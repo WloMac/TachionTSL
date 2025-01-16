@@ -15,6 +15,7 @@ function Hero(){
             <Navbar.Brand href="#home" className="me-auto">Tachion</Navbar.Brand>
             <Nav className="ms-auto justify-content-end">
             <Nav.Link href="#service">Usługi</Nav.Link>
+            <Nav.Link href="#fleet">Flota</Nav.Link>
             <Nav.Link href="#about">O nas</Nav.Link>
             <Nav.Link href="#coop">Współpraca</Nav.Link>
             <Nav.Link href="#contact">Kontakt</Nav.Link>
