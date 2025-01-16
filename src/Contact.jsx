@@ -50,7 +50,7 @@ function Contact() {
               </h3>
             </Col>
           </Row>
-          <Row className="justify-content-center text-center font-m font-secondary-color poppins-semibold mt-5 ">
+          <Row className="justify-content-center text-center font-m font-primary-color poppins-semibold mt-5 ">
             <Col md="auto">            
                     <p>Tachion TSL</p>
                     <p>Emil Gierańczyk </p>                   
@@ -59,7 +59,7 @@ function Contact() {
                     <p>REGON: 529281512</p>
             </Col>
           </Row>
-          <Row className="justify-content-center font-secondary-color mt-5">
+          <Row className="justify-content-center font-primary-color mt-5">
             <Col md="6">
               <div className="map-container">
                 <iframe

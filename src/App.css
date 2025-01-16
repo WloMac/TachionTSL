@@ -1,12 +1,15 @@
 :root {
- --primary: #5c9dfd;
- --secondary: #1f5cb7; 
- --tertiary: #3866aac3;
- --quaternary: #405A80;
- --font-white: #fff;
- --font-black: #000;
+ --primary: #2A3659;
+ --secondary: #F2F2F2; 
+ --tertiary: #F2C230;
+ --quaternary: #F2A922;
+
+ --font-primary: #fff;
+ --font-secondary:#F28C0F;
+ --font-tertiary: #2A3659;
+
  --background-light: #ffffff; 
- --background-dark: #2B2E33;
+ --background-dark: #2A3659;
 
  --margin-s: 0.5rem;
  --margin-m: 1rem;
@@ -102,15 +105,19 @@
 /* Font color */ 
 
   .font-primary-color{
-    color: var(--font-black);
+    color: var(--font-primary);
   }
   .font-secondary-color{
-    color: var(--font-white);
+    color: var(--font-secondary);
   }
   .font-tierary-color{
-    color: var(--secondary);
+    color: var(--font-tertiary);
   }
 
+  .txt-in{
+    text-indent: 2rem; /* Wcięcie o 20px */
+  
+  }
 
 body{
     font-family: "Poppins", sans-serif;
@@ -122,7 +129,7 @@ body{
 .navbar{
   background-color: transparent !important;
   backdrop-filter: blur(10px);
-  position: absolute; /* Position it over the hero section */
+  position: fixed; /* Position it over the hero section */
   top: 0; /* Stick it to the top */
   width: 100%; /* Make it span the entire width */
   z-index: 10; /* Ensure it stays above other elements */
@@ -134,7 +141,7 @@ body{
 /* Target the navbar brand */
 .navbar .navbar-brand {
   font-size: var(--font-size-xl); /* Adjust size */
-  color: var(--font-white); /* Change color */
+  color: var(--font-primary); /* Change color */
   font-weight: 800;
   text-transform: uppercase;
   
@@ -144,19 +151,19 @@ body{
 .navbar .nav-link {
   font-size: var(--font-size-m); /* Adjust size */
   font-weight: 400;
-  color: #ffffff; /* Change color */
+  color: var(--font-primary); /* Change color */
   text-transform: uppercase; /* Example: Make text uppercase */
 }
 
 /* Change the hover state for links */
 .navbar .nav-link:hover {
-  color: var(--primary); /* Change color on hover */
+  color: var(--font-secondary); /* Change color on hover */
 }
 
 .navbar .nav-link.active{
   font-size: var(--font-size-m);
   font-weight: 600;
-  color: var(--font-white);
+  color: var(--font-primary);
   background-color: var(--tertiary);
   text-transform: uppercase;
 }
@@ -181,7 +188,7 @@ body{
 
 .title{
     padding-top: 3rem;
-    color: var(--font-white);
+    color: var(--font-primary);
     text-align: center;
 }
 
@@ -192,7 +199,7 @@ body{
 .button-primary {
     width: 9rem; /* Set the width */
     height: 3rem; /* Set the height to make it square */
-    background-color: rgb(252, 252, 252); /* White background */
+    background-color: var(--background-light); /* White background */
     color: black; /* Transparent text */
     border: 2px solid #ffffff; /* Optional: add a border color */
     cursor: pointer; /* Change cursor on hover */
@@ -204,9 +211,11 @@ body{
 }
 
 .button-primary:hover {
-    background-color: var(--primary); /* Change background color on hover */
-    color: white; /* Change text color on hover */
-    transform: scale(1.2);
+    background-color: var(--tertiary); /* Change background color on hover */
+    color: var(--font-primary); /* Change text color on hover */
+    border: 2px solid var(--secondary);
+    font-weight: 600;
+    transform: scale(1.01);
     transition: transform 0.6s;
 }
 
@@ -214,7 +223,7 @@ body{
     width: 9rem; /* Set the width */
     height: 3rem; /* Set the height to make it square */
     background-color: transparent;
-    color: rgb(246, 246, 246); /* Transparent text */
+    color: var(--font-primary); /* Transparent text */
     border: 2px solid #ffffff; /* Optional: add a border color */
     cursor: pointer; /* Change cursor on hover */
     display: flex; /* Center text if needed */
@@ -226,7 +235,7 @@ body{
 
 .button-secondary:hover{
     background-color: var(--primary); /* Change background color on hover */
-    color: white; /* Change text color on hover */
+    color: var(--font-primary); /* Change text color on hover */
     transform: scale(1.2);
     transition: transform 0.6s;
 }
@@ -234,21 +243,23 @@ body{
 /* SERVICES */
 
 .service-section{
-  min-height: 90vh;
+  margin-top: 50px;
+  min-height: 100vh;
   /* scroll-snap-align: start; */
 }
 
 .card-basic{
-  background-color: var(--background-light);
-  height: 80vh;
-  color: var(--primary);
+  text-align: center;
+  text-wrap: pretty;
+  height: 40vh;
+  color: var(--font-tertiary);
   justify-self: center;
   border: 1px solid #ccc;
   border-radius: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   padding: 1rem;
-  width: clamp(16rem, 20vw, 32rem);
-  max-width: 42rem;
+  width: 100%;
+  /* max-width: 42rem; */
   transition: transform 0.3s; box-shadow: 0.3s;
   margin-top: 5%;
   background-position: center;
@@ -257,7 +268,7 @@ body{
 }
 
 .card-basic:hover{
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -265,28 +276,33 @@ body{
   background-image: url(./assets/transport-card-background.jpg);
   z-index: 1;
 }
-.card-sped{
-  background-image: url(./assets/sped-card-background.jpg);
+.card-zwierz{
+  background-image: url(./assets/zwierz-background.jpg);
   z-index: 1;
 }
-.card-logistics{
+.card-sent{
   background-image: url(./assets/logistics-card-background.jpg);
   z-index: 1;
 }
 
-.card-transport::before, .card-sped::before, .card-logistics::before{
+.card-gps{
+  background-image: url(./assets/compass-background.jpg);
+  z-index: 1;
+}
+
+.card-transport::before, .card-zwierz::before, .card-sent::before, .card-gps::before{
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(31, 92, 183, 0.2); /* Kolor maski */
+  background-color: rgba(0, 0, 0, 0.35); /* Kolor maski */
   transition: opacity 0.3s ease;
   z-index: -1;
 }
 
-.card-transport:hover::before, .card-sped:hover::before, .card-logistics:hover::before {
+.card-transport:hover::before, .card-zwierz:hover::before, .card-sent:hover::before, .card-gps:hover::before{
   opacity: 0;
 }
 
@@ -386,7 +402,7 @@ body{
 .footer-section{
    background-color: var(--primary);
    border-top: 1rem ridge var(--tertiary);
-   color: var(--font-white); /* Change color */
+   color: var(--font-primary); /* Change color */
     font-weight: 800;
     text-transform: uppercase;
    text-decoration: none;

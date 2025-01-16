@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRoad, faRetweet, faCubes } from "@fortawesome/free-solid-svg-icons";
+import {faRecycle, faRoute, faDiamond, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 function Service() {
@@ -12,45 +12,55 @@ function Service() {
       <section className="service-section" id="service">
         <Container className="mt-5">          
           <Row className="mt-3">
-            <Col xs={12} md={4}>
+            <Col xs={12} md={3}>
               <Card className="card-basic card-transport">
                 <Card.Body>
-                  <Card.Title><h3 className="poppins-semibold font-secondary-color">Transport</h3></Card.Title>
+                  <Card.Title><h3 className="poppins-semibold font-primary-color">TRANSPORT ODPADÓW</h3></Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
-                    <FontAwesomeIcon icon={faRoad} className="fa-2x font-secondary-color" />
+                    <FontAwesomeIcon icon={faRecycle} className="fa-2x font-primary-color" />
                   </Card.Subtitle>
-                  <Card.Text><p className="poppins-semibold font-secondary-color">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.</p>
+                  <Card.Text><p className="poppins-semibold font-primary-color">
+                   </p>
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={4}>
-              <Card className="card-basic card-sped">
+            <Col xs={12} md={3}>
+              <Card className="card-basic card-zwierz">
                 <Card.Body>
-                  <Card.Title><h3 className="poppins-semibold font-secondary-color">Spedycja</h3></Card.Title>
+                  <Card.Title><h3 className="poppins-semibold font-primary-color">TRANSPORT PRODUKTÓW POCHODZENIA ZWIERZĘCEGO</h3></Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
-                    <FontAwesomeIcon icon={faRetweet} className="fa-2x font-secondary-color" />
+                    <FontAwesomeIcon icon={faDiamond} className="fa-2x font-primary-color" />
                   </Card.Subtitle>
-                  <Card.Text><p className="poppins-semibold font-secondary-color">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <Card.Text><p className="poppins-semibold font-primary-color">
+                    Kategoria 3
                     </p>
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={4}>
-              <Card className="card-basic card-logistics">
+            <Col xs={12} md={3}>
+              <Card className="card-basic card-sent">
                 <Card.Body>
-                  <Card.Title><h3 className="poppins-semibold font-secondary-color">Logistyka</h3></Card.Title>
+                  <Card.Title><h3 className="font-primary-color">PRZEWÓZ TOWARÓW OBJĘTYCH MONITOROWANIEM</h3></Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
-                    <FontAwesomeIcon icon={faCubes} className="fa-2x font-secondary-color" />
+                    <FontAwesomeIcon icon={faRoute} className="fa-2x font-primary-color" />
                   </Card.Subtitle>
-                  <Card.Text><p className="poppins-semibold font-secondary-color">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.</p>
+                  <Card.Text><p className="poppins-semibold font-primary-color">
+                    SENT</p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col xs={12} md={3}>
+              <Card className="card-basic card-gps">
+                <Card.Body>
+                  <Card.Title><h3 className="poppins-semibold font-primary-color">SYSTEM LOKALIZACJI POJAZDÓW GPS</h3></Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    <FontAwesomeIcon icon={faLocationDot} className="fa-2x font-primary-color" />
+                  </Card.Subtitle>
+                  <Card.Text><p className="poppins-semibold font-primary-color">
+                    Bieżąca lokalizacja całej floty</p>
                   </Card.Text>
                 </Card.Body>
               </Card>

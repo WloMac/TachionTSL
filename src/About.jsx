@@ -16,17 +16,20 @@ function About() {
               <div className="about-details">
                 <h3 className="font-xlarge font-secondary-color poppins-extrabold">
                   <hr></hr>
-                  Ponad 20 lat doświadczenia w branży
+                  Transport Kutno - przewozy kontenerów i tanków
                   <hr></hr>
                 </h3>
-                <p className="font-secondary-color"> 
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perspiciatis fugiat dolorem optio aliquid? Culpa, sed
-                  reiciendis tenetur ullam nihil possimus, quaerat nemo,
-                  laboriosam rem numquam voluptatibus reprehenderit illum
-                  ratione asperiores ipsa et? Ipsa pariatur ex repellendus
-                  numquam at! Ad, ratione nulla? Minima dolorum numquam
-                  blanditiis iusto tenetur vero eaque deserunt.
+                <p className="txt-in font-m font-primary-color"> 
+                Od 18 lat dostarczamy niezawodne rozwiązania
+                  w transporcie drogowym na rynku krajowym
+                  i międzynarodowym. Specjalizujemy się
+                  w przewozach kontenerów i tanków, oferując
+                  także przewozy plandekowe. Nasza siedziba
+                  w Siemienicach zanjduje się w pobliżu terminala
+                  kontenerowego w Kutnie oraz terminali w Łodzi, Strykowie i Pruszkowie, co pozwala na szybkie i
+                  efektywnie działania. Dzięki wieloletniemu doświadczeniu oraz
+                  znajomości rynku zapewniamy elastyczne, bezpieczne i terminowe usługi, dostosowane do
+                  indywidualnych potrzeb naszych klientów.
                 </p>
               </div>
             </Col>
@@ -51,7 +54,7 @@ function About() {
                 WSPÓŁPRACA
                 <hr></hr>
               </h3>
-              <p className="font-secondary-color">
+              <p className="font-primary-color">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perspiciatis fugiat dolorem optio aliquid? Culpa, sed reiciendis
                 tenetur ullam nihil possimus, quaerat nemo, laboriosam rem

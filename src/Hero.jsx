@@ -28,16 +28,18 @@ function Hero(){
                 <Col>
                 <h1 className="poppins-extrabold font-xxxlarge">Tachion TSL</h1> 
                 <h2 className="poppins-semibold">Transport Spedycja Logistyka</h2>
-                <p className="quote"><h3 className="poppins-extralight">Twój ładunek zasługuje na <span className="poppins-extrabold">specjalne</span> traktowanie</h3> </p>
+                <p className="quote"><h3 className="poppins-extralight">Twój ładunek zasługuje na <span className="poppins-extrabold font-secondary-color">specjalne</span> traktowanie</h3> </p>
                 </Col>  
                                
             </Row>
             <Row className="buttons poppins-semibold justify-content-center mt-5">
                 <Col xs={6} lg={2} className="text-center">
-                <button className="button-primary">Więcej</button>
+                <button className="button-primary"  
+                onClick={() => window.location.href = '#service'}>Więcej</button>
                 </Col>
                 <Col xs={6} lg={2} className="text-center">   
-                <button className="button-primary">Kontakt</button>
+                <button className="button-primary" 
+                 onClick={() => window.location.href = '#contact'}>Kontakt</button>
                 </Col>
             </Row>
         </Container>
